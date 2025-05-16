@@ -1,12 +1,12 @@
 # Practica 3
-## Explicación gráficas obtenidas
+## Explicación gráficos obtenidos
 
 ### Momentos de interés en la teleoperación
 -
 -
 -
 -
-
+---
 ### 1. Gráfico posición de las ruedas - tiempo
 
 ---
