@@ -4,23 +4,18 @@
 ### Momentos de interés en la teleoperación:
 Durante la ejecución del pick and place destacan los siguientes momentos:
 
-- Desplazamiento hasta posición de extracción cubo:
-  - **0s :arrow_right: 22s**
-- Agarrando cubo en posición target:
-  - **47s :arrow_right: 57s**
-- Movimiento del brazo a posición hold:
-  - **57s :arrow_right: 58s**
-- Sosteniendo caja en posición hold:
-  - **58s :arrow_right: 86s**
-- Movimiento del brazo a posición release:
-  - **86s :arrow_right: 91s**
-- Sosteniendo cubo en posición release:
-  - **91s :arrow_right: 100s**
-- Abrir gripper para soltar cubo en posición release:
-  - **100s**
-- Movimiento del brazo a posicón home:
-  - **109s :arrow_right: 115s**
+| Nº | Descripción                                      | Intervalo        |
+|:--:|:-------------------------------------------------|:-----------------|
+| 1  | Desplazamiento hasta posición de extracción cubo | ***0 s &rArr; 22 s*** |
+| 2  | Agarrando cubo en posición target                | ***47 s &rArr; 57 s***|
+| 3  | Movimiento del brazo a posición hold             | ***57 s &rArr; 58 s***|
+| 4  | Sosteniendo caja en posición hold                | ***58 s &rArr; 86 s***|
+| 5  | Movimiento del brazo a posición release          | ***86 s &rArr; 91 s***|
+| 6  | Sosteniendo cubo en posición release             | ***91 s &rArr; 100 s***|
+| 7  | Abrir gripper para soltar cubo en posición release| ***100 s***      |
+| 8  | Movimiento del brazo a posición home             | ***109 s &rArr; 115 s***|
 ---
+
 ### 1. Gráfico posición de las ruedas - tiempo
 
 
