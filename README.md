@@ -1,7 +1,6 @@
-# Practica 3
-## Explicación gráficos obtenidos
+# Practica 3: Explicación gráficos obtenidos
 
-### Posiciones de interés durante el pick and place:
+## Posiciones de interés durante el pick and place:
 Para el pick and place se utilizan las siguientes posiciones del brazo:
 - home: posición origen cuando comienza la simulación
 - target: posición a la altura del suelo para agarrar el cubo (sólo se modifica la articulación prismática)
@@ -12,7 +11,7 @@ Por tanto, la trayectoria seguida por el brazo (sin contar el end effector) dura
 
 **home &rArr; target &rArr; hold &rArr; release &rArr; hold &rArr; home**
 
-### Momentos de interés en la teleoperación:
+## Momentos de interés en la teleoperación:
 Durante la ejecución del pick and place destacan los siguientes momentos:
 
 | Nº | Descripción                                      | Intervalo        |
@@ -27,16 +26,16 @@ Durante la ejecución del pick and place destacan los siguientes momentos:
 | 8  | Movimiento del brazo a posición home             | ***109 s &rArr; 115 s***|
 ---
 
-### 1. Gráfico posición de las ruedas - tiempo
+## 1. Gráfico posición de las ruedas - tiempo
 
 
 ---
 
-### 2. Gráfico aceleración ruedas - tiempo 
+## 2. Gráfico aceleración ruedas - tiempo 
 
 ---
 
-### 3. Gráfico gasto - tiempo
+## 3. Gráfico gasto - tiempo
 
 
 ---
