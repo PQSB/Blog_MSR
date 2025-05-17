@@ -28,7 +28,6 @@ Durante la ejecución del pick and place destacan los siguientes momentos:
 
 ## 1. Gráfico posición de las ruedas - tiempo
 
-
 ---
 
 ## 2. Gráfico aceleración ruedas - tiempo 
@@ -36,6 +35,5 @@ Durante la ejecución del pick and place destacan los siguientes momentos:
 ---
 
 ## 3. Gráfico gasto - tiempo
-
 
 ---
