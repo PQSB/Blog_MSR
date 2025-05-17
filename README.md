@@ -2,10 +2,10 @@
 
 ## Posiciones de interés durante el pick and place:
 Para el pick and place se utilizan las siguientes posiciones del brazo:
-- home: posición origen cuando comienza la simulación
-- target: posición a la altura del suelo para agarrar el cubo (sólo se modifica la articulación prismática)
-- hold (posición para sostener el cubo a la altura correcta (sólo se modifica la articulación prismática)
-- release (posición para dejar caer el cubo en el contendor del rover)
+- **home:** posición origen cuando comienza la simulación
+- **target:** posición a la altura del suelo para agarrar el cubo (sólo se modifica la articulación prismática)
+- **hold:** posición para sostener el cubo a la altura correcta (sólo se modifica la articulación prismática)
+- **release:** posición para dejar caer el cubo en el contendor del rover
 
 Por tanto, la trayectoria seguida por el brazo (sin contar el end effector) durante el pick and place es la siguiente:
 
