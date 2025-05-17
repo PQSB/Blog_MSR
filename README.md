@@ -2,7 +2,7 @@
 
 ## Posiciones de interés durante el pick and place:
 Para el pick and place se utilizan las siguientes posiciones del brazo:
-- **home:** posición origen cuando comienza la simulación
+- **home:** posición origen cuando comienza la simulación del pick and place
 - **target:** posición a la altura del suelo para agarrar el cubo (sólo se modifica la articulación prismática)
 - **hold:** posición para sostener el cubo a la altura correcta (sólo se modifica la articulación prismática)
 - **release:** posición para dejar caer el cubo en el contendor del rover
@@ -16,7 +16,7 @@ Durante la ejecución del pick and place destacan los siguientes momentos:
 
 | Nº | Descripción                                      | Intervalo        |
 |:--:|:-------------------------------------------------|:-----------------|
-| 1  | Desplazamiento hasta posición de extracción cubo | ***0 s &rArr; 22 s*** |
+| 1  | Desplazamiento hasta posición correcta para pick and place | ***0 s &rArr; 22 s*** |
 | 2  | Agarrando cubo en posición target                | ***47 s &rArr; 57 s***|
 | 3  | Movimiento del brazo a posición hold             | ***57 s &rArr; 58 s***|
 | 4  | Sosteniendo cubo en posición hold                | ***58 s &rArr; 86 s***|
