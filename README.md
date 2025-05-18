@@ -28,7 +28,7 @@ Durante la ejecución del pick and place destacan los siguientes momentos:
 
 ## 1. Gráfico posición de las ruedas - tiempo
 En este gráfico destacan los siguientes detalles:
-- Las variaciones en posición ocurren durante el intervalo de desplazamiento hasta la posición de inicio del pick and place [Nº1](#table). Esto se debe a que solo se realiza teleoperación de la base del robot hasta que se alcanza dicha posición. Una vez alcanzada, como se puede comprobar, los valores se estabilizan durante el resto de la ejecución.
+- Las variaciones en posición ocurren durante el intervalo de desplazamiento hasta la posición de inicio del pick and place ([Nº1](#table)). Esto se debe a que solo se realiza teleoperación de la base del robot hasta que se alcanza dicha posición. Una vez alcanzada, como se puede comprobar, los valores se estabilizan durante el resto de la ejecución.
 
 - Se puede observar que los valores correspondientes a las ruedas del lado derecho (right) son negativos. Esto se debe a que para ser compatible con los REP de ROS, el eje z del lado derecho está apuntando hacia fuera, lo que provoca que la dirección positiva de las ruedas en ese lado cause un desplazamiento hacia detrás.
 
@@ -38,11 +38,11 @@ En este gráfico destacan los siguientes detalles:
 
 ## 2. Gráfico aceleración ruedas - tiempo 
 En este gráfico destacan los siguientes detalles:
-- Las principales variaciones en aceleración ocurren durante el intervalo de desplazamiento hasta la posición de inicio del pick and place [Nº1](#table). Esto se debe a que, como se ha comentado previamente, solo se realiza teleoperación de la base del robot hasta que se alcanza dicha posición.
+- Las principales variaciones en aceleración ocurren durante el intervalo de desplazamiento hasta la posición de inicio del pick and place ([Nº1](#table)). Esto se debe a que, como se ha comentado previamente, solo se realiza teleoperación de la base del robot hasta que se alcanza dicha posición.
 
 - Como se comentó en el gráfico anterior, se puede ver que se produce una pequeñas estabilización debido a la parada realizada de verificación entre los segundos **13** y **17** aproximadamente.
 
-- A pesar de que las mayores variaciones se producen durante el intervalo comentado, se puede comprobar que una vez ya finalizada la teleoperación de la base se vuelven a encontrar ciertos picos. Estos coinciden con momentos en los que los links del brazo realizan los desplazamientos más destacables.
+- A pesar de que las mayores variaciones se producen durante el intervalo comentado, se puede comprobar que una vez ya finalizada la teleoperación de la base se vuelven a encontrar ciertos picos. Estos coinciden con momentos en los que los links del brazo realizan los desplazamientos más destacables ([Nº5](#table) y [Nº8](#table)).
 
 ---
 
