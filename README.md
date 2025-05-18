@@ -58,7 +58,7 @@ El movimiento del pick and place comienza una vez alcanzada la posición indicad
 En el gráfico se puede comprobar que se sigue la trayectoria descrita ([trayecto](#trajectory)) en la que destacan los momentos remarcados en la [tabla](#table) apreciándose los siguientes resultados en cada etapa:
 - **Nº2 Agarrando cubo en posición target:**
 
-  Se puede observar que al cerrar los dedos del gripper y comenzar a agarrar el cubo se producen unos cambios ligeros en las fuerzas empeladas por los joints. La fuerza empleada por el joint prismático disminuye y, tanto la empleada por los dos joints revolute y como por la base del gripper aumenta. Es decir, el joint prismático necesita realizar menos esfuerzo para manetenerse en esa posición mientras que a los otros les cuesta más.
+  Se puede observar que al cerrar los dedos del gripper y comenzar a agarrar el cubo se producen unos cambios ligeros en las fuerzas empeladas por los joints. La fuerza empleada por el joint prismático disminuye y, tanto la empleada por los dos joints revolute y como por la base del gripper aumenta. Es decir, el joint prismático necesita realizar menos esfuerzo para manetenerse en esa posición mientras que a los otros les cuesta más. Cabe destacar que el movimiento previo (de home a target) no produce ninguna variación en los valores.
 
 - **Nº3 Movimiento del brazo a posición hold y Nº4 Sosteniendo cubo en posición hold:**
 
