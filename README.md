@@ -8,7 +8,7 @@ Para el pick and place se utilizan las siguientes posiciones del brazo:
 - **release:** posición para dejar caer el cubo en el contendor del rover
 
 Por tanto, la trayectoria seguida por el brazo (sin contar el end effector) durante el pick and place es la siguiente:
-
+<a id="trajectory"></a>
 **home &rArr; target &rArr; hold &rArr; release &rArr; hold &rArr; home**
 
 ## Momentos de interés durante la ejecución completa:
@@ -42,10 +42,14 @@ En este gráfico destacan los siguientes detalles:
 
 - Como se comentó en el gráfico anterior, se puede ver que se produce una pequeñas estabilización debido a la parada realizada de verificación entre los segundos **13** y **17** aproximadamente.
 
-- A pesar de que las mayores variaciones se producen durante el intervalo comentado, se puede comprobar que una vez ya finalizada la teleoperación de la base se vuelven a encontrar ciertos picos. Estos coinciden con momentos en los que los links del brazo realizan los desplazamientos más destacables ([Nº5](#table) y [Nº8](#table)).
+- A pesar de que las mayores variaciones se producen durante el intervalo comentado, se puede comprobar que una vez ya finalizada la teleoperación de la base se vuelven a encontrar ciertos picos. Estos coinciden con momentos en los que los links del brazo realizan los desplazamientos más destacables ([Nº5 y Nº8](#table)).
 
 ---
 
 ## 3. Gráfico gasto - tiempo
+El movimiento del pick and place comienza una vez alcanzada la posición indicada, por lo que comienza a partir del segundo 22 aproximadamente ([Nº1](#table)).
+
+En el gráfico se puede comprobar que se sigue la trayectoria descrita ([trayecto](#trajectory)) en la que destacan los momentos remarcados en la [tabla](#table) apreciándose los siguientes resultados en cada etapa:
+- Permanece en home 
 
 ---
