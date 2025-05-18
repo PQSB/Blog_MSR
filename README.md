@@ -57,5 +57,7 @@ En el gráfico se puede comprobar que se sigue la trayectoria descrita ([trayect
 
 - **Nº5 Movimiento del brazo a posición release y Nº6 Sosteniendo cubo en posición release:** se puede observar como durante el desplazamiento de la posición hold a la posición release, se producen varios picos de aumento y descenso en la fuerza empleada por el joint prismático debidos al propio movimiento ya que este dificulta el mantener el cubo a esa altura. Por otro lado, se puede observar un aumento en la fuerza empleado por el resto de joints puesto que todos están involucrados en dicho movimiento. Incluso el gripper_base_link_joint ya que es necesaria una rotación para alcanzar la posición requerida. Una vez alcanzada la posición se puede observar como los valors vuelven a estabilizarse con los valores que se tenían en la posición previa hold, verificando así que los aumentos se debieron al propio desplazamiento.
 
-- 
+- **Nº7 Abrir gripper para soltar cubo en posición release:** se puede observar que al soltar el cubo disminuye la fuerza empleada por el joint prismático al valor incial que tenía antes de comenzar a sujetar el cubo puesto que ya no es necesario realizar el esfuerzo por manetener el cubo en dicha posición. Respecto al resto de joints, estos no expirmentan ningún cambio ya que este cambio no les afecta.
+
+- Nº8 Movimiento del brazo a posición home: 
 ---
