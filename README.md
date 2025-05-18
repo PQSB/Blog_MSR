@@ -1,5 +1,9 @@
 # Practica 3: Explicación gráficos obtenidos
 
+**Fecha:** 18/05/24
+
+**Autor:** Andrés Galea
+
 ## Posiciones de interés durante el pick and place:
 Para el pick and place se utilizan las siguientes posiciones del brazo:
 - **home:** posición origen cuando comienza la simulación del pick and place
