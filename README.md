@@ -11,7 +11,7 @@ Por tanto, la trayectoria seguida por el brazo (sin contar el end effector) dura
 
 **home &rArr; target &rArr; hold &rArr; release &rArr; hold &rArr; home**
 
-## Momentos de interés en la teleoperación:
+## Momentos de interés durante la ejecución completa:
 Durante la ejecución del pick and place destacan los siguientes momentos:
 
 | Nº | Descripción                                      | Intervalo        |
@@ -27,6 +27,12 @@ Durante la ejecución del pick and place destacan los siguientes momentos:
 ---
 
 ## 1. Gráfico posición de las ruedas - tiempo
+En este gráfico destacan los siguientes detalles:
+- Las variaciones en posición ocurren durante el intervalo de desplazamiento hasta la posición de inicio del pick and place (1). Esto se debe a que solo se realiza teleoperación de la base del robot hasta que se alcanza dicha posición. Una vez alcanzada, como se puede comprobar, los valores se estabilizan durante el resto de la ejecución.
+
+- Se puede observar que los valores correspondientes a las ruedas del lado derecho (right) son negativos. Esto se debe a que para ser compatible con los REP de ROS, el eje z del lado derecho está apuntando hacia fuera, lo que provoca que la dirección positiva de las ruedas en ese lado cause un desplazamiento hacia detrás.
+
+- Se puedo observar también que durante sobre el segundo 13, se produce una breve parada y después se produce un decremento en los valores. Esto se debe a que primero se detuvo la teleoperación para evaluar si la posición era correcta y, al verificar que no lo era, posteriormente se realizó un desplazamiento marcha atrás para rectificar.
 
 ---
 
