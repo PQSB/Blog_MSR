@@ -55,24 +55,32 @@ En este gráfico destacan los siguientes detalles:
 ## 3. Gráfico gasto - tiempo
 El movimiento del pick and place comienza una vez alcanzada la posición indicada, por lo que comienza a partir del segundo 22 aproximadamente ([Nº1](#table)).
 
+Para relacionar los nombres que aparecen en la leyenda de la gráfica con el tipo de joint:
+| Joint                          | Tipo      |
+|--------------------------------|-----------|
+| arm_1_art_link_joint           | revolute  |
+| arm_2_art_link_joint           | revolute  |
+| arm_3_art_link_joint           | prismatic |
+| gripper_base_link_joint        | revolute  |
+
 En el gráfico se puede comprobar que se sigue la trayectoria descrita ([trayecto](#trajectory)) en la que destacan los momentos remarcados en la [tabla](#table) apreciándose los siguientes resultados en cada etapa:
 - **Nº2 Agarrando cubo en posición target:**
 
-  Se puede observar que al cerrar los dedos del gripper y comenzar a agarrar el cubo se producen unos cambios ligeros en las fuerzas empeladas por los joints. La fuerza empleada por el joint prismático disminuye y, tanto la empleada por los dos joints revolute y como por la base del gripper aumenta. Es decir, el joint prismático necesita realizar menos esfuerzo para manetenerse en esa posición mientras que a los otros les cuesta más. Cabe destacar que el movimiento previo (de home a target) no produce ninguna variación en los valores.
+  Se puede observar que al cerrar los dedos del gripper y comenzar a agarrar el cubo se producen unos cambios ligeros en las fuerzas empeladas por los joints. La fuerza empleada por el joint prismatic disminuye y, tanto la empleada por los dos joints revolute y como por la base del gripper aumenta. Es decir, el joint prismatic necesita realizar menos esfuerzo para manetenerse en esa posición mientras que a los otros les cuesta más. Cabe destacar que el movimiento previo (de home a target) no produce ninguna variación en los valores.
 
 - **Nº3 Movimiento del brazo a posición hold y Nº4 Sosteniendo cubo en posición hold:**
 
-  Se puede observar que al subir el joint prismático a la posición hold, la fuerza necesitada por dicho joint para mantener esa posición aumenta a un valor mayor que el inicial, alcanzando su valor máximo constante. Este cambio se debe a que el cubo ya no reposa en el suelo y el joint debe manetenerlo elevado compensando el peso del mismo. Por otra parte, en el resto de joints la fuerza necesaria disminuye hasta prácticamente retornar al valor que tenían inicialmente.
+  Se puede observar que al subir el joint prismatic a la posición hold, la fuerza necesitada por dicho joint para mantener esa posición aumenta a un valor mayor que el inicial, alcanzando su valor máximo constante. Este cambio se debe a que el cubo ya no reposa en el suelo y el joint debe manetenerlo elevado compensando el peso del mismo. Por otra parte, en el resto de joints la fuerza necesaria disminuye hasta prácticamente retornar al valor que tenían inicialmente.
 
 - **Nº5 Movimiento del brazo a posición release y Nº6 Sosteniendo cubo en posición release:**
 
-  Se puede observar como durante el movimiento de la posición hold a la posición release se producen varios picos de aumento y descenso en la fuerza empleada por el joint prismático debidos al propio movimiento ya que este dificulta el mantener el cubo a esa altura. Por otro lado, se puede ver un aumento en la fuerza empleada por el resto de joints puesto que todos están involucrados en dicho movimiento. Incluso el gripper_base_link_joint ya que es necesaria una rotación para alcanzar la posición requerida. Una vez alcanzada la posición, se puede observar como los valores vuelven a ser los que se tenían en la posición previa (hold), verificando así que los aumentos se debieron al propio movimiento.
+  Se puede observar como durante el movimiento de la posición hold a la posición release se producen varios picos de aumento y descenso en la fuerza empleada por el joint prismatico debidos al propio movimiento ya que este dificulta el mantener el cubo a esa altura. Por otro lado, se puede ver un aumento en la fuerza empleada por el resto de joints puesto que todos están involucrados en dicho movimiento. Incluso el gripper_base_link_joint ya que es necesaria una rotación para alcanzar la posición requerida. Una vez alcanzada la posición, se puede observar como los valores vuelven a ser los que se tenían en la posición previa (hold), verificando así que los aumentos se debieron al propio movimiento.
 
 - **Nº7 Abrir gripper para soltar cubo en posición release:**
 
-  Se puede observar que al soltar el cubo la fuerza empleada por el joint prismático disminuye al valor incial que tenía antes de comenzar a sujetar el cubo puesto que ya no es necesario realizar el esfuerzo por manetener el cubo en dicha posición. En cuanto al resto de joints, estos no expirmentan ningún cambio ya que este no les afecta.
+  Se puede observar que al soltar el cubo la fuerza empleada por el joint prismatic disminuye al valor incial que tenía antes de comenzar a sujetar el cubo puesto que ya no es necesario realizar el esfuerzo por manetener el cubo en dicha posición. En cuanto al resto de joints, estos no expirmentan ningún cambio ya que este no les afecta.
 
 - **Nº8 Movimiento del brazo a posición hold y Nº9 Movimiento del brazo a posición home y finalización:**
 
-  Se puede observar que durante el desplzamiento de la posición release a la posición hold la fuerza empleada por los revolute joints del brazo así como por el gripper_base_link_joint vuelve a aumentar puesto que son los que llevan a cabo el movmimiento. Resulta de interés comprobar que ya que ahora no se está sujetando el cubo, las fuerza requerida es menor tanto para el revolute joint 2 del brazo como para el gripper_base_link_joint, siendo esta última casi inapreciable. Por este mismo motivo tampoco se aprecia variación en la fuerza empleada por el joint prismático. Una vez alcanzada la posición hold se recuperan los valores previos y, aunque después se realiza el último desplazamamiento desde hold hasta la posición home, este ya no conlleva ninguna variación puesto que sólo se desplaza el joint prismático y este ya no tiene que sostener el cubo.
+  Se puede observar que durante el desplzamiento de la posición release a la posición hold la fuerza empleada por los revolute joints del brazo así como por el gripper_base_link_joint vuelve a aumentar puesto que son los que llevan a cabo el movmimiento. Resulta de interés comprobar que ya que ahora no se está sujetando el cubo, las fuerza requerida es menor tanto para el revolute joint 2 del brazo como para el gripper_base_link_joint, siendo esta última casi inapreciable. Por este mismo motivo tampoco se aprecia variación en la fuerza empleada por el joint prismatic. Una vez alcanzada la posición hold se recuperan los valores previos y, aunque después se realiza el último desplazamamiento desde hold hasta la posición home, este ya no conlleva ninguna variación puesto que sólo se desplaza el joint prismatic y este ya no tiene que sostener el cubo.
 ---
