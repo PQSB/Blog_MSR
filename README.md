@@ -36,9 +36,9 @@ Durante la ejecución del pick and place destacan los siguientes momentos:
 En este gráfico destacan los siguientes detalles:
 - Las variaciones en posición ocurren durante el intervalo de desplazamiento hasta la posición de inicio del pick and place ([Nº1](#table)). Esto se debe a que solo se realiza teleoperación de la base del robot hasta que se alcanza dicha posición. Una vez alcanzada, como se puede comprobar, los valores se estabilizan durante el resto de la ejecución.
 
-- Se puede observar que los valores correspondientes a las ruedas del lado derecho (right) son negativos. Esto se debe a que para ser compatible con los REP de ROS, el eje z del lado derecho está apuntando hacia fuera, lo que provoca que la dirección positiva de las ruedas en ese lado cause un desplazamiento hacia detrás.
+- Se puede observar que los valores correspondientes a las ruedas del lado derecho (right) son negativos. Esto se debe a que, para ser compatible con los REP de ROS, la dirección a la que apunta el eje z del lado derecho provoca que la movimiento positivo de las ruedas en ese lado cause un desplazamiento hacia detrás.
 
-- Se puede observar también que desde el segundo **13** hasta el **20** aproximadamente, se produce una breve parada y después un cierto decremento en los valores. Esto se debe a que primero se detuvo la teleoperación para evaluar si la posición era correcta y, al verificar que no lo era, se realizó un desplazamiento marcha atrás para rectificar. Después de realizar la corrección, se avanza hasta el segundo **22** en el que se alcanza las posición deseada y se detiene la teleoperación de la base por lo que los valores se estabilizan.
+- Se puede observar también que desde el segundo **13** hasta el **20** aproximadamente, se produce una breve estabilización y después un cierto decremento en los valores. Esto se debe a que, durante ese intervalo, primero se detuvo la teleoperación para evaluar si la posición era correcta y, al verificar que no lo era, se realizó un desplazamiento marcha atrás para rectificar. Después de realizar dicha corrección, se avanza de nuevo hasta el segundo **22** en el que se alcanza las posición deseada y se detiene la teleoperación de la base lo que causa que los valores se estabilicen.
 
 ---
 
