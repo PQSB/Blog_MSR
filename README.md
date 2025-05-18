@@ -32,7 +32,7 @@ En este gráfico destacan los siguientes detalles:
 
 - Se puede observar que los valores correspondientes a las ruedas del lado derecho (right) son negativos. Esto se debe a que para ser compatible con los REP de ROS, el eje z del lado derecho está apuntando hacia fuera, lo que provoca que la dirección positiva de las ruedas en ese lado cause un desplazamiento hacia detrás.
 
-- Se puedo observar también que durante sobre el segundo 13, se produce una breve parada y después se produce un decremento en los valores. Esto se debe a que primero se detuvo la teleoperación para evaluar si la posición era correcta y, al verificar que no lo era, posteriormente se realizó un desplazamiento marcha atrás para rectificar.
+- Se puede observar también que desde el segundo **13** hasta el **20** aproximadamente, se produce una breve parada y después un cierto decremento en los valores. Esto se debe a que primero se detuvo la teleoperación para evaluar si la posición era correcta y, al verificar que no lo era, se realizó un desplazamiento marcha atrás para rectificar. Después de realizar la corrección, se avanza hasta el segundo **22** en el que se alcanza las posición deseada y se detiene la teleoperación de la base por lo que los valores se estabilizan.
 
 ---
 
