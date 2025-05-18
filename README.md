@@ -37,6 +37,12 @@ En este gráfico destacan los siguientes detalles:
 ---
 
 ## 2. Gráfico aceleración ruedas - tiempo 
+En este gráfico destacan los siguientes detalles:
+- Las principales variaciones en aceleración ocurren durante el intervalo de desplazamiento hasta la posición de inicio del pick and place [Nº1](#table). Esto se debe a que, como se ha comentado previamente, solo se realiza teleoperación de la base del robot hasta que se alcanza dicha posición.
+
+- Como se comentó en el gráfico anterior, se puede ver que se produce una pequeñas estabilización debido a la parada realizada de verificación entre los segundos **13** y **17** aproximadamente.
+
+- A pesar de que las mayores variaciones se producen durante el intervalo comentado, se puede comprobar que una vez ya finalizada la teleoperación de la base se vuelven a encontrar ciertos picos. Estos coinciden con momentos en los que los links del brazo realizan los desplazamientos más destacables.
 
 ---
 
