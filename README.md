@@ -9,6 +9,7 @@ Para el pick and place se utilizan las siguientes posiciones del brazo:
 
 Por tanto, la trayectoria seguida por el brazo (sin contar el end effector) durante el pick and place es la siguiente:
 <a id="trajectory"></a>
+
 **home &rArr; target &rArr; hold &rArr; release &rArr; hold &rArr; home**
 
 ## Momentos de interés durante la ejecución completa:
