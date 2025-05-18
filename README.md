@@ -13,10 +13,10 @@ Por tanto, la trayectoria seguida por el brazo (sin contar el end effector) dura
 
 ## Momentos de interés durante la ejecución completa:
 Durante la ejecución del pick and place destacan los siguientes momentos:
-
+<a id="r1"></a>
 | Nº | Descripción                                      | Intervalo        |
 |:--:|:-------------------------------------------------|:-----------------|
-| <a id="r1"></a>**1**  | Desplazamiento hasta posición correcta para pick and place | ***0 s &rArr; 22 s*** |
+| 1  | Desplazamiento hasta posición correcta para pick and place | ***0 s &rArr; 22 s*** |
 | 2  | Agarrando cubo en posición target                | ***47 s &rArr; 57 s***|
 | 3  | Movimiento del brazo a posición hold             | ***57 s &rArr; 58 s***|
 | 4  | Sosteniendo cubo en posición hold                | ***58 s &rArr; 86 s***|
