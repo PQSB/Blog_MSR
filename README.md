@@ -28,7 +28,8 @@ Durante la ejecución del pick and place destacan los siguientes momentos:
 | 5  | Movimiento del brazo a posición release          | ***86 s &rArr; 91 s***|
 | 6  | Sosteniendo cubo en posición release             | ***91 s &rArr; 100 s***|
 | 7  | Abrir gripper para soltar cubo en posición release| ***100 s***      |
-| 8  | Movimiento del brazo a posición home             | ***109 s &rArr; 115 s***|
+| 8  | Movimiento del brazo a posición hold             | ***109 s &rArr; 115 s***|
+| 9  | Movimiento del brazo a posición home y finalización             | ***115 s &rArr; fin***|
 ---
 
 ## 1. Gráfico posición de las ruedas - tiempo
@@ -63,5 +64,5 @@ En el gráfico se puede comprobar que se sigue la trayectoria descrita ([trayect
 
 - **Nº7 Abrir gripper para soltar cubo en posición release:** se puede observar que al soltar el cubo disminuye la fuerza empleada por el joint prismático al valor incial que tenía antes de comenzar a sujetar el cubo puesto que ya no es necesario realizar el esfuerzo por manetener el cubo en dicha posición. Respecto al resto de joints, estos no expirmentan ningún cambio ya que este cambio no les afecta.
 
-- **Nº8 Movimiento del brazo a posición home:** se puede observar que durante el desplzamiento de la posición release a la posición hold vuelve a aumentar la fuerza empleada por los revolute joints del brazo así como por el gripper_base_link_joint puesto que son los que llevan a cabo el movmimiento. Resulta de interés comprobar que ya que ahora no se está sujetando el cubo, las fuerzas requeridas son menores tanto para el revolute joint 2 del brazo como para el gripper_base_link_joint, siendo este último casi inapreciable. Por este mismo motivo, tampoco se aprecia variación el la fuerza empleada por el joint prismático. Una alcanzada la posición hold se recuperan los valores previos y, aunque, después se realiza el último desplazamamiento desde hold hasta la posición home, este ya no conlleva ninguna variación puesto que sólo se desplaza el joint prismático y esta ya no sostiene el cubo.
+- **Nº8 Movimiento del brazo a posición hold y Nº9 Movimiento del brazo a posición home y finalización:** se puede observar que durante el desplzamiento de la posición release a la posición hold vuelve a aumentar la fuerza empleada por los revolute joints del brazo así como por el gripper_base_link_joint puesto que son los que llevan a cabo el movmimiento. Resulta de interés comprobar que ya que ahora no se está sujetando el cubo, las fuerzas requeridas son menores tanto para el revolute joint 2 del brazo como para el gripper_base_link_joint, siendo este último casi inapreciable. Por este mismo motivo, tampoco se aprecia variación el la fuerza empleada por el joint prismático. Una alcanzada la posición hold se recuperan los valores previos y, aunque, después se realiza el último desplazamamiento desde hold hasta la posición home, este ya no conlleva ninguna variación puesto que sólo se desplaza el joint prismático y esta ya no sostiene el cubo.
 ---
